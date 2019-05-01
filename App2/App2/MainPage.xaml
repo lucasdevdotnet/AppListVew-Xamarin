@@ -12,6 +12,7 @@
               VerticalOptions="CenterAndExpand" />
         <ListView  x:Name="ListaFuncionarios" IsGroupingEnabled="true" GroupDisplayBinding="{Binding Titulo}" GroupShortNameBinding="{Binding TituloCurto}">
             <ListView.ItemTemplate>
+                
                 <DataTemplate>
                     <TextCell Text="{Binding Nome}"/>
                 </DataTemplate>
