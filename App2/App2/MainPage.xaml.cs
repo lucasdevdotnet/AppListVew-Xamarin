@@ -18,18 +18,18 @@ namespace App2
         private List<Grupo> GetFuncionarios()
         {
             return new List<Grupo> {
-                new Grupo("Presidente","CEO")
+                new Grupo("Presidente","CEO","Presidente da empresa")
                 {
                      new Pessoa { Nome = "Lucas"},
 
                 },
-                new Grupo("Diretores","DIR")
+                new Grupo("Diretores","DIR", "Diretor da empresa")
                 {
                        new Pessoa { Nome = "João"},
                   new Pessoa { Nome = "Feliepe"},
                   new Pessoa { Nome = "Pedro"},
                 },
-                      new Grupo("Gerentes","Ger")
+                      new Grupo("Gerentes","Ger"," Gerente da empresa")
                 {
 
                   new Pessoa { Nome = "Fatima"},
@@ -45,12 +45,14 @@ namespace App2
         public class Grupo : List<Pessoa>
         {
             public string Titulo { get; set; }
-
+            public string Descri { get; set; }
             public string TituloCurto { get; set; }
-            public Grupo(string Titulo, string TituloCurto)
+            public Grupo(string Titulo, string TituloCurto, string Descri)
+
             {
                 this.Titulo = Titulo;
                 this.TituloCurto = TituloCurto;
+                this.Descri = Descri;
 
             }
 
