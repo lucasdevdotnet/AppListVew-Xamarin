@@ -3,16 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App2"
              x:Class="App2.MainPage">
-
+    <ScrollView>
+        
+   
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-
-              VerticalOptions="CenterAndExpand" />
+        
+        
         <!--GroupDisplayBinding="{Binding Titulo}" GroupShortNameBinding="{Binding TituloCurto}"-->
         <ListView  x:Name="ListaFuncionarios" IsGroupingEnabled="true" >
-            <ListView.GroupHeaderTemplate>
+                <ListView.Header>
+                    <!-- Place new controls here -->
+                    <Label Text="Header!" 
+           HorizontalOptions="Center"
+              VerticalOptions="CenterAndExpand" />
+                </ListView.Header>
+                <ListView.Footer>
+                    <Label Text=" Footer" 
+           HorizontalOptions="Center"
+              VerticalOptions="CenterAndExpand" />
+                </ListView.Footer>
+                <ListView.GroupHeaderTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Margin="15,0,0,0">
@@ -30,5 +40,6 @@
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
+        </ScrollView>
 
 </ContentPage>

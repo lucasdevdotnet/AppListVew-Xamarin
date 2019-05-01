@@ -25,7 +25,7 @@ namespace App2
                 },
                 new Grupo("Diretores","DIR", "Diretor da empresa")
                 {
-                       new Pessoa { Nome = "João"},
+                  new Pessoa { Nome = "João"},
                   new Pessoa { Nome = "Feliepe"},
                   new Pessoa { Nome = "Pedro"},
                 },
@@ -36,6 +36,31 @@ namespace App2
                   new Pessoa { Nome = "Katia"},
                   new Pessoa { Nome = "Vanessa"},
                   new Pessoa { Nome = "Juliana"}
+                },
+               new Grupo("Funcionarios","Fun"," Funcionarios da empresa")
+                {
+
+                  new Pessoa { Nome = "Fatima"},
+                  new Pessoa { Nome = "Katia"},
+                  new Pessoa { Nome = "Vanessa"},
+                  new Pessoa { Nome = "Juliana"},
+                  new Pessoa { Nome = "João"},
+                  new Pessoa { Nome = "Feliepe"},
+                  new Pessoa { Nome = "Pedro"},
+                   new Pessoa { Nome = "Fatima"},
+                  new Pessoa { Nome = "Katia"},
+                  new Pessoa { Nome = "Vanessa"},
+                  new Pessoa { Nome = "Juliana"},
+                  new Pessoa { Nome = "João"},
+                  new Pessoa { Nome = "Feliepe"},
+                  new Pessoa { Nome = "Pedro"},
+                   new Pessoa { Nome = "Fatima"},
+                  new Pessoa { Nome = "Katia"},
+                  new Pessoa { Nome = "Vanessa"},
+                  new Pessoa { Nome = "Juliana"},
+                  new Pessoa { Nome = "João"},
+                  new Pessoa { Nome = "Feliepe"},
+                  new Pessoa { Nome = "Pedro"},
                 }
 
 
